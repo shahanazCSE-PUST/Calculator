@@ -53,7 +53,7 @@ function clr(){
 }
 function equal() {
     var result = eval(display.innerText);
-    display.innerText='= ' + result;
+    display.innerText=result;
 
 }
 
