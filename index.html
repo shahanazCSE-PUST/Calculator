@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Calculator</title>
+    <style>
+        button:hover{
+            background-color: #E6007E;
+        }
+        button{
+            background-color: #F472B6;
+            padding: 18px;
+            border-radius:8px;
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container mx-auto w-4/12 bg-black p-8 rounded-lg">
+            <div class="grid bg-gray-400 h-32 rounded-lg text-white text-4xl font-bold mb-8"><span id="result-id" class="p-10"> </span></div>
+
+            <div id="parent-id" class="grid grid-rows-5 grid-flow-col gap-4 gap-y-4 ">
+                <button onclick="plus()">+</button>
+                <button onclick="one()">1</button>
+                <button onclick="four()">4</button>
+                <button onclick="seven()">7</button>
+                <button onclick="zero()">0</button>
+                <button onclick="minus()">-</button>
+                <button onclick="two()">2</button>
+                <button onclick="five()">5</button>
+                <button onclick="eight()">8</button>
+                <button onclick="dot()">.</button>
+                <button onclick="multi()">x</button>
+                <button onclick="three()">3</button>
+                <button onclick="six()">6</button>
+                <button onclick="nine()">9</button>
+                <button onclick="clr()">AC</button>
+                <button onclick="div()">/</button>
+                <button onclick="modulo()">%</button>
+                <button onclick="equal()" class="row-start-3 row-end-6">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
